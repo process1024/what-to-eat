@@ -1,0 +1,44 @@
+.flex-wrap{
+    display: flex;
+    height: 100vh;
+    color: #666;
+    .type-list{
+        width: 24%;
+        background: #F5F5F5;
+        height: 100%;
+        text-align: center;
+        View{
+            padding: 20rpx 0;
+        }
+        .active-Type{
+            background: #fff;
+        }
+    }
+    .meal-list{
+        width: 76%;
+        height: 100%;
+        overflow: scroll;
+        .add-btn{
+            position: fixed;
+            left: 20rpx;
+            bottom: 20rpx;
+        }
+        .meal-item{
+            display: flex;
+            align-items: center;
+            padding: 20rpx;
+            justify-content: space-between;
+            View{
+                display: flex;
+                at-button{
+                    display: inline-block;
+                    width: 120rpx;
+                    font-size:24rpx;
+                    &:nth-child(1){
+                        margin-right: 20rpx;
+                    }
+                }
+            }
+        }
+    }
+}
